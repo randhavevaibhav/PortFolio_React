@@ -10,7 +10,7 @@ import ProjectDisplay from './Components/ProjectDisplay';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='/PortFolio_React'>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
