@@ -44,8 +44,8 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2021 - present"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          date="Nov 2021 - Present"
+          iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<Work />}
         >
           <h3 className="vertical-timeline-element-title">Actimize Developer</h3>
