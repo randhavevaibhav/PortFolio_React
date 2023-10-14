@@ -4,9 +4,10 @@ import "../Styles/Navbar.css";
 import ReorderIcon from "@material-ui/icons/Reorder";
 
 function Navbar() {
+  
   const [expandNavBar, setExpandNavBar] = useState(false);
   const location = useLocation();
-
+  changeBodyOverflow(expandNavBar);
   useEffect(()=>
   {
 
@@ -30,6 +31,19 @@ function Navbar() {
       </div>
     </div>
   );
+
+  
 }
 
 export default Navbar;
+
+function changeBodyOverflow(val)
+{
+  if(val)
+  {
+    document.body.style.overflow="hidden";
+  }
+  else{
+    document.body.style.overflow="";
+  }
+}

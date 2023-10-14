@@ -66,10 +66,14 @@
   @media only screen and (max-width: 700px) {
     .toggleButton {
       display: flex;
+      height: 52px;
     }
     #close a {
       display: none;
      
+    }
+    .navbar{
+      height: 60px;
     }
   }
   

@@ -10,7 +10,7 @@ function Home(props) {
             <div className='about'>
                 <h2>Hi!! my name is Vaibhav</h2>
                 <div className='promt'>
-                    <p>A Software Developer with passion for learning and creating.</p>
+                    <p style={{marginTop:100}}>A Software Developer with passion for learning and creating.</p>
                     <LinkedIn/>
                     <GitHub/> 
                     <Email/>
