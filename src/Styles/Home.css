@@ -59,6 +59,7 @@
   @media only screen and (max-width: 600px) {
     .about h2 {
       font-size: 40px;
+      margin-top: -300px;
     }
   
     .about .prompt {
