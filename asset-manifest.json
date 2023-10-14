@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PortFolio_React/static/css/main.c9e143f7.css",
-    "main.js": "/PortFolio_React/static/js/main.7a76c533.js",
+    "main.css": "/PortFolio_React/static/css/main.23ca5235.css",
+    "main.js": "/PortFolio_React/static/js/main.602a98e6.js",
     "static/js/787.1ed0c42c.chunk.js": "/PortFolio_React/static/js/787.1ed0c42c.chunk.js",
     "static/media/Demo_BM_2.mp4": "/PortFolio_React/static/media/Demo_BM_2.abe6240780519362a6f6.mp4",
-    "static/media/proj1.jpg": "/PortFolio_React/static/media/proj1.3fb0bdc7583872ea12b3.jpg",
+    "static/media/BookMarkApp.png": "/PortFolio_React/static/media/BookMarkApp.c58c4d4e682cf8a8bfa8.png",
     "index.html": "/PortFolio_React/index.html",
-    "main.c9e143f7.css.map": "/PortFolio_React/static/css/main.c9e143f7.css.map",
-    "main.7a76c533.js.map": "/PortFolio_React/static/js/main.7a76c533.js.map",
+    "main.23ca5235.css.map": "/PortFolio_React/static/css/main.23ca5235.css.map",
+    "main.602a98e6.js.map": "/PortFolio_React/static/js/main.602a98e6.js.map",
     "787.1ed0c42c.chunk.js.map": "/PortFolio_React/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9e143f7.css",
-    "static/js/main.7a76c533.js"
+    "static/css/main.23ca5235.css",
+    "static/js/main.602a98e6.js"
   ]
 }
