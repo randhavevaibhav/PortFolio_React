@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/PortFolio_React/static/css/main.12137879.css",
-    "main.js": "/PortFolio_React/static/js/main.414e1b8b.js",
+    "main.css": "/PortFolio_React/static/css/main.10bf8d14.css",
+    "main.js": "/PortFolio_React/static/js/main.1a60a1a4.js",
     "static/js/787.1ed0c42c.chunk.js": "/PortFolio_React/static/js/787.1ed0c42c.chunk.js",
+    "static/media/erol-ahmed-IHL-Jbawvvo-unsplash.jpg": "/PortFolio_React/static/media/erol-ahmed-IHL-Jbawvvo-unsplash.bb2017e932d1455ff433.jpg",
     "static/media/Demo_BM_2.mp4": "/PortFolio_React/static/media/Demo_BM_2.abe6240780519362a6f6.mp4",
     "static/media/BookMarkApp.png": "/PortFolio_React/static/media/BookMarkApp.c58c4d4e682cf8a8bfa8.png",
     "index.html": "/PortFolio_React/index.html",
-    "main.12137879.css.map": "/PortFolio_React/static/css/main.12137879.css.map",
-    "main.414e1b8b.js.map": "/PortFolio_React/static/js/main.414e1b8b.js.map",
+    "main.10bf8d14.css.map": "/PortFolio_React/static/css/main.10bf8d14.css.map",
+    "main.1a60a1a4.js.map": "/PortFolio_React/static/js/main.1a60a1a4.js.map",
     "787.1ed0c42c.chunk.js.map": "/PortFolio_React/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12137879.css",
-    "static/js/main.414e1b8b.js"
+    "static/css/main.10bf8d14.css",
+    "static/js/main.1a60a1a4.js"
   ]
 }
