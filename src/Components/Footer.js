@@ -6,7 +6,7 @@ import {WhatsApp} from '@material-ui/icons';
 import '../Styles/Footer.css';
 function Footer() {
     return (
-        <div className='footer'>
+        <div className='footerB'>
             <div className='socialMedia'>
             <LinkedIn/>
             <GitHub/>
