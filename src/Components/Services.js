@@ -14,6 +14,7 @@ function Services(props) {
               {ServicesList.slice(rowNum, rowNum + 3).map((service, idx) => {
                 return (
                   <ServiceItem
+                 
                     id={idx}
                     iClass={service.iClassName}
                     title={service.title}
