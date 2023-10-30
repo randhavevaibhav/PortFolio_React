@@ -1,35 +1,48 @@
 import React, { useEffect, useState } from "react";
-import { Link,useLocation } from "react-router-dom";
+
 import "../Styles/Navbar.css";
-import ReorderIcon from "@material-ui/icons/Reorder";
+
 
 function Navbar() {
   
   const [expandNavBar, setExpandNavBar] = useState(false);
-  const location = useLocation();
-  changeBodyOverflow(expandNavBar);
-  useEffect(()=>
-  {
-
-        setExpandNavBar(false)
-  },[location])
+ 
+  
+ 
   return (
-    <div className="navbar" id={expandNavBar ? "open":"close"}>
-      <div className="toggleButton">
-        <button
-          onClick={() => {
-            setExpandNavBar((prev) => !prev);
-          }}
-        >
-          <ReorderIcon />
-        </button>
-      </div>
-      <div className="links">
-        <Link to="/">HOME</Link>
-        <Link to="/projects">PROJECTS</Link>
-        <Link to="/experience">EXPERIENCE</Link>
-      </div>
-    </div>
+   <>
+   
+    
+   <ul className="navbar-nav ms-auto">
+          <li className="nav-item active"  >
+            <a className="nav-link " href="#home" >
+              Home
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link " href="#about">
+              About
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link " href="#services">
+              Services
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link " href="#portfolio">
+              Portfolio
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link " href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+     
+   
+   </>
   );
 
   
@@ -37,13 +50,3 @@ function Navbar() {
 
 export default Navbar;
 
-function changeBodyOverflow(val)
-{
-  if(val)
-  {
-    document.body.style.overflow="hidden";
-  }
-  else{
-    document.body.style.overflow="";
-  }
-}

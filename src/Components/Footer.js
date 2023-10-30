@@ -1,20 +1,28 @@
 import React from 'react';
-import {LinkedIn} from '@material-ui/icons';
-import { GitHub } from '@material-ui/icons';
-import {Email} from '@material-ui/icons';
-import {WhatsApp} from '@material-ui/icons';
-import '../Styles/Footer.css';
+
 function Footer() {
     return (
         <div className='footerB'>
-            <div className='socialMedia'>
-            <LinkedIn/>
-            <GitHub/>
-            <Email/>
-            <WhatsApp/>
-
-            </div>
-            <p> &copy; 2023 vaibhav.com</p>
+            <footer className="container-fluid footer" id="footer">
+    {/* social media icons */}
+    <div className="social-icons mt-4">
+      <a href="https://www.facebook.com/" target="_blank">
+        <i className="fab fa-facebook" />
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <i className="fab fa-instagram" />
+      </a>
+      <a href="https://www.twitter.com/" target="_blank">
+        <i className="fab fa-twitter" />
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank">
+        <i className="fab fa-linkedin" />
+      </a>
+      <a href="https://www.twitch.tv/" target="_blank">
+        <i className="fab fa-twitch" />
+      </a>
+    </div>
+  </footer>
         </div>
     );
 }
