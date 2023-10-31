@@ -10,7 +10,7 @@
 /* hero background image */
 .bgimage {
   height: 100vh;
-  background: url("../assets/vadim-sherbakov-RcdV8rnXSeE-unsplash.jpg");
+  background: url("../assets/bg_image.webp");
   background-size: cover;
   position: relative;
   padding: 0;
@@ -128,11 +128,11 @@
 
 @media (max-width: 800px) {
   .typeanimation h2 {
-    font-size: 41px;
+    font-size: 38px;
   }
   .typeanimation {
     display: inline-block;
-    width: 40ch;
+    width: 38ch;
     animation: typing 2s steps(19), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
