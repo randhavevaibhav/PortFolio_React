@@ -6,19 +6,29 @@
 .section:last-of-type {
   padding-bottom: 4rem;
 }
-  
+
 /* hero background image */
 .bgimage {
-  height:100vh;
-  background: url('../assets/erol-ahmed-IHL-Jbawvvo-unsplash.jpg');
-  background-size:cover;
-  position:relative;
+  height: 100vh;
+  background: url("../assets/vadim-sherbakov-RcdV8rnXSeE-unsplash.jpg");
+  background-size: cover;
+  position: relative;
   padding: 0;
   margin: 0;
 }
+
+.bgimage::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 /* text css above hero image*/
 .hero_title {
-  padding-top: 10rem;
+  padding-top: 0rem;
   font-size: 4.5rem;
 }
 .hero_desc {
@@ -29,32 +39,29 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -80%);
   color: white;
 }
 
-.navbar-toggler
-{
- 
+.navbar-toggler {
   font-size: 18px;
 }
 
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
- box-shadow: none;
+  box-shadow: none;
 }
 
-
-#navbarSupportedContent
-{
+#navbarSupportedContent {
   transition: height 1s ease;
 }
 
+#about {
+  margin-top: -8;
+}
 
-
-.image_about
-{
+.image_about {
   width: 100%;
 }
 
@@ -65,7 +72,7 @@
 .fa-facebook:hover,
 .fa-instagram:hover,
 .fa-twitter:hover,
-.fa-linkedin:hover, 
+.fa-linkedin:hover,
 .fa-twitch:hover {
   color: #fff;
 }
@@ -97,24 +104,71 @@
   text-align: center;
 }
 
-
-
-@media (max-width: 800px) {
-  .container, .container-sm {
-    max-width: 714px;
+@media (min-width: 800px) {
+  .typeanimation {
+    display: inline-block;
+    width: 69ch;
+    animation: typing 2s steps(19), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
   }
 
-  #navbarSupportedContent > ul
-  {
-      display: flex;
-      align-items: center;
-  }
-  #form
-  {
-      margin-top: 20px;
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
   }
 }
 
+@media (max-width: 800px) {
+  .typeanimation h2 {
+    font-size: 41px;
+  }
+  .typeanimation {
+    display: inline-block;
+    width: 40ch;
+    animation: typing 2s steps(19), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
 
-#embedmap-canvas img
-{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .container,
+  .container-sm {
+    max-width: 714px;
+  }
+
+  #navbarSupportedContent > ul {
+    display: flex;
+    align-items: center;
+  }
+  #form {
+    margin-top: 20px;
+  }
+}
+
+#embedmap-canvas img {
+  max-width: none !important;
+  background: none !important;
+  font-size: inherit;
+  font-weight: inherit;
+}

@@ -52,11 +52,19 @@ function Home(props) {
         </div>
       </nav>
       {/* main banner */}
+      <div className="bgimage" id="home">
 
-      <section className="container-fluid section bgimage" id="home">
+        </div>
+       
+      <section className="container-fluid section" >
+      
         <div className="row">
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero_text">
-            <h2 className="hero_title">Hi, it's me Vaibhav</h2>
+         
+           <div className="typeanimation">
+           <h2 className="hero_title">Hi, it's me Vaibhav</h2>
+           </div>
+            
             <p className="hero_desc">
               I am a professional react developer from pune.
             </p>
