@@ -39,6 +39,7 @@ function Contact() {
       .then(
         (result) => {
           alert(result.text);
+          clearForm();
         },
         (error) => {
           alert(error.text);
@@ -162,9 +163,7 @@ function Contact() {
                 type="submit"
                 name="submit"
                 className="btn btn-success mt-3"
-                onClick={()=>{
-                  clearForm()
-                }}
+                
               >
                 Contact Me
               </button>
