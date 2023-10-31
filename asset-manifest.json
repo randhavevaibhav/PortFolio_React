@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/PortFolio_React/static/css/main.d889f8c7.css",
+    "main.css": "/PortFolio_React/static/css/main.c206c52b.css",
     "main.js": "/PortFolio_React/static/js/main.fb474b49.js",
     "static/js/787.1ed0c42c.chunk.js": "/PortFolio_React/static/js/787.1ed0c42c.chunk.js",
-    "static/media/vadim-sherbakov-RcdV8rnXSeE-unsplash.jpg": "/PortFolio_React/static/media/vadim-sherbakov-RcdV8rnXSeE-unsplash.16b1a1c0f4232c2e635f.jpg",
+    "static/media/bg_image.webp": "/PortFolio_React/static/media/bg_image.727234f0bde7c49b07ef.webp",
     "index.html": "/PortFolio_React/index.html",
-    "main.d889f8c7.css.map": "/PortFolio_React/static/css/main.d889f8c7.css.map",
+    "main.c206c52b.css.map": "/PortFolio_React/static/css/main.c206c52b.css.map",
     "main.fb474b49.js.map": "/PortFolio_React/static/js/main.fb474b49.js.map",
     "787.1ed0c42c.chunk.js.map": "/PortFolio_React/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d889f8c7.css",
+    "static/css/main.c206c52b.css",
     "static/js/main.fb474b49.js"
   ]
 }
