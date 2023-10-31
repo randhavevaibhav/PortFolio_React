@@ -1,6 +1,26 @@
 import React from 'react';
+import {useForm} from 'react-hook-form';
+import * as yup from 'yup'; 
+import {yupResolver} from '@hookform/resolvers/yup';
 
 function Contact() {
+ 
+  const schema = yup.object().shape({
+      name: yup.string().required("Please enter your name."),
+      email: yup.string().email("Please enter correct Email.").required("Please enter correct Email."),
+      subject: yup.string().required("Please write some subject."),
+      message: yup.string().required("Please write some message."),
+
+  })
+  const {register,handleSubmit, formState:{errors}} = useForm({
+    resolver:yupResolver(schema),
+  });
+  const onSubmit = (data)=>
+  {
+     
+      //handel submit
+  }
+  
     return (
         <div>
              <section className="container mt-3 section" id="contact">
@@ -44,37 +64,49 @@ function Contact() {
       </div>
       <div className="col-lg-6">
         {/* form fields */}
-        <form id="form" method="post">
+        <form id="form" method="post" onSubmit={handleSubmit(onSubmit)}>
+          <span className='redAstrick'>*</span>
           <input
             type="text"
             name="name"
             id="name"
-            className="form-control form-control-lg"
+            className="form-control"
             placeholder="Name"
+            {...register("name")}
           />
+          <p className='errorMessage'>{errors.name?.message}</p>
+          <span className='redAstrick'>*</span>
           <input
-            type="email"
+            // type="email"
             name="email"
             id="email"
-            className="form-control mt-3"
+            className="form-control"
             placeholder="Email"
+            {...register("email")}
           />
+           <p className='errorMessage'>{errors.email?.message}</p>
+           <span className='redAstrick'>*</span>
           <input
             type="text"
             name="subject"
             id="subject"
             className="form-control mt-3"
             placeholder="Subject"
+            {...register("subject")}
           />
+          <p className='errorMessage'>{errors.subject?.message}</p>
+          <span className='redAstrick'>*</span>
           <div className="mb-3 mt-3">
             <textarea
               name="message"
               id="message"
               className="form-control"
               rows={5}
-              placeholder="Project Details"
+              placeholder="Message"
               defaultValue={""}
+              {...register("message")}
             />
+            <p className='errorMessage'>{errors.message?.message}</p>
           </div>
           <button type="submit" name="submit" className="btn btn-success mt-3">
             Contact Me

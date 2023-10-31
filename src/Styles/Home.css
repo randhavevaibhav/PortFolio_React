@@ -103,7 +103,25 @@
   background-color: #808080;
   text-align: center;
 }
+.redAstrick {
+  color: red;
+  position: relative;
+  left: -1rem;
+  top: 33px;
+}
+.errorMessage:empty {
+  
+  display: none;
 
+}
+.errorMessage
+{
+  color: red;
+  margin-bottom: 0;
+}
+
+
+/* typing animation for desktop */
 @media (min-width: 800px) {
   .typeanimation {
     display: inline-block;
@@ -126,6 +144,7 @@
   }
 }
 
+/* typing animation for mobile */
 @media (max-width: 800px) {
   .typeanimation h2 {
     font-size: 38px;
@@ -154,6 +173,7 @@
   }
 }
 
+/* CSS for mobile devices */
 @media (max-width: 800px) {
   .container,
   .container-sm {
@@ -166,6 +186,12 @@
   }
   #form {
     margin-top: 20px;
+  }
+
+  .redAstrick {
+    position: relative;
+
+    left: -0.6rem;
   }
 }
 
