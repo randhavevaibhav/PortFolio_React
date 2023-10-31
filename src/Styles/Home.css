@@ -130,9 +130,12 @@
   .typeanimation h2 {
     font-size: 38px;
   }
+  .hero_desc {
+    font-size: 1.4rem;
+  }
   .typeanimation {
     display: inline-block;
-    width: 38ch;
+    width: 36ch;
     animation: typing 2s steps(19), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
