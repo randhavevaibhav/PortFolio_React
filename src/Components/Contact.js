@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import SuccessBox from "./SuccessBox";
+import "../Styles/LodingSVG.css"
 
 function Contact() {
   const form = useRef();
@@ -13,6 +14,8 @@ function Contact() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [emailStatus, setEmailStatus] = useState(false);
+  const [loading,setLoading] =  useState(false);
+
   const schema = yup.object().shape({
     name: yup.string().required("Please enter your name."),
     email: yup
@@ -30,6 +33,7 @@ function Contact() {
     resolver: yupResolver(schema),
   });
   const submitForm = (e) => {
+    setLoading(true);
     emailjs
       .sendForm(
         "service_c3dxqkn",
@@ -39,8 +43,9 @@ function Contact() {
       )
       .then(
         (result) => {
+          setLoading(false);
           setEmailStatus(true);
-
+          
           clearForm();
         },
         (error) => {
@@ -48,6 +53,7 @@ function Contact() {
           alert(error.text);
         }
       );
+      
   };
 
   const clearForm = () => {
@@ -70,7 +76,9 @@ function Contact() {
 
   return (
     <>
-      <div>
+   
+
+    <div>
         <section className="container mt-3 section" id="contact">
           <h1 className="text-center">Contact Me</h1>
           <div className="row mt-4">
@@ -183,12 +191,22 @@ function Contact() {
           </div>
         </section>
       </div>
+{/* Loading SVG */}
 
+
+
+
+{loading ? <div id="loading-svg"></div>:<p ></p>}
       {/* Success Box */}
 
       {emailStatus ? <SuccessBox /> : <p></p>}
 
-      {/* {<SuccessBox/>} */}
+
+
+   
+     
+
+     
     </>
   );
 }
