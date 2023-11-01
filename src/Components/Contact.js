@@ -174,7 +174,7 @@ function Contact() {
                 <button
                   type="submit"
                   name="submit"
-                  className="btn btn-success mt-3"
+                  className="btn  btn-primary mt-3"
                 >
                   Contact Me
                 </button>
@@ -187,6 +187,8 @@ function Contact() {
       {/* Success Box */}
 
       {emailStatus ? <SuccessBox /> : <p></p>}
+
+      {/* {<SuccessBox/>} */}
     </>
   );
 }

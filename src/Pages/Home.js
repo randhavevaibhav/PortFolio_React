@@ -54,7 +54,7 @@ function Home(props) {
       {/* main banner */}
       <div className="bgimage" id="home"></div>
 
-      <section className="container-fluid section">
+      <section className="container-fluid section" id="headingText">
         <div className="row">
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero_text">
             <div className="typeanimation">
