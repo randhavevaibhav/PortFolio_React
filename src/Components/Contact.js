@@ -1,11 +1,10 @@
 import React from "react";
-import { useForm } from "react-hook-form";
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import SuccessBox from "./SuccessBox";
-import "../Styles/LodingSVG.css"
+import { GlobalContext } from "../Contex/GlobalContext";
+import { useContext } from "react";
+
 
 function Contact() {
   const form = useRef();
@@ -13,26 +12,13 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [emailStatus, setEmailStatus] = useState(false);
-  const [loading,setLoading] =  useState(false);
+  const { emailStatus, setEmailStatus } = useContext(GlobalContext);
 
-  const schema = yup.object().shape({
-    name: yup.string().required("Please enter your name."),
-    email: yup
-      .string()
-      .email("Please enter correct Email.")
-      .required("Please enter correct Email."),
-    subject: yup.string().required("Please write some subject."),
-    message: yup.string().required("Please write some message."),
-  });
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({
-    resolver: yupResolver(schema),
-  });
+  const { loading, setLoading } = useContext(GlobalContext);
+  console.log("email staus ---> " + emailStatus);
+
   const submitForm = (e) => {
+    console.log("inside the submit form function !!!!!");
     setLoading(true);
     emailjs
       .sendForm(
@@ -45,18 +31,15 @@ function Contact() {
         (result) => {
           setLoading(false);
           setEmailStatus(true);
-          
-          clearForm();
         },
         (error) => {
           setEmailStatus(false);
           alert(error.text);
         }
       );
-      
   };
 
-  const clearForm = () => {
+  const checkFormFields = (event) => {
     if (
       name !== null &&
       name !== "" &&
@@ -67,18 +50,39 @@ function Contact() {
       message !== null &&
       message !== ""
     ) {
-      setName("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+      submitForm(event);
+    } else {
+      alert("Please input all the form fields !!");
     }
   };
 
+  // for bootstrap css
+  (function () {
+    "use strict";
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll(".needs-validation");
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener(
+        "submit",
+        function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+
+          form.classList.add("was-validated");
+        },
+        false
+      );
+    });
+  })();
+
   return (
     <>
-   
-
-    <div>
+      <div>
         <section className="container mt-3 section" id="contact">
           <h1 className="text-center">Contact Me</h1>
           <div className="row mt-4">
@@ -120,69 +124,101 @@ function Contact() {
             </div>
             <div className="col-lg-6">
               {/* form fields */}
-              <form id="form" ref={form} onSubmit={handleSubmit(submitForm)}>
-                <span className="redAstrick">*</span>
+              {/* onSubmit={handleSubmit(submitForm)} */}
+              <form className="needs-validation" noValidate ref={form}>
+                {/* <span className="redAstrick">*</span> */}
+                <label
+                  htmlFor="validationCustom01"
+                  className="form-label redAstrick"
+                >
+                  *
+                </label>
                 <input
                   type="text"
-                  name="name"
-                  id="name"
                   className="form-control"
+                  id="validationCustom01"
+                  required
                   placeholder="Name"
-                  {...register("name")}
                   value={name}
                   onChange={(e) => {
                     setName(e.target.value);
                   }}
                 />
-                <p className="errorMessage">{errors.name?.message}</p>
-                <span className="redAstrick">*</span>
+                <div className="invalid-feedback">
+                  Please type your name.
+                </div>
+
+                <label
+                  htmlFor="validationCustom02"
+                  className="form-label redAstrick"
+                >
+                  *
+                </label>
                 <input
-                  // type="email"
-                  name="email"
-                  id="email"
+                  type="email"
                   className="form-control"
+                  id="validationCustom01"
+                  required
                   placeholder="Email"
-                  {...register("email")}
                   value={email}
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
                 />
-                <p className="errorMessage">{errors.email?.message}</p>
-                <span className="redAstrick">*</span>
+                <div className="invalid-feedback">
+                  Please provide a valid Email.
+                </div>
+
+                <label
+                  htmlFor="validationCustom03"
+                  className="form-label redAstrick"
+                >
+                  *
+                </label>
                 <input
                   type="text"
-                  name="subject"
-                  id="subject"
-                  className="form-control mt-3"
+                  className="form-control"
+                  id="validationCustom03"
+                  required
                   placeholder="Subject"
-                  {...register("subject")}
                   value={subject}
                   onChange={(e) => {
                     setSubject(e.target.value);
                   }}
                 />
-                <p className="errorMessage">{errors.subject?.message}</p>
-                <span className="redAstrick">*</span>
+                <div className="invalid-feedback">
+                  Please provide a valid Subject.
+                </div>
+
+                <label
+                  htmlFor="validationCustom04"
+                  className="form-label redAstrick"
+                >
+                  *
+                </label>
+
                 <div className="mb-3 mt-3">
                   <textarea
-                    name="message"
-                    id="message"
                     className="form-control"
-                    rows={5}
+                    id="validationCustom04"
+                    required
                     placeholder="Message"
-                    {...register("message")}
                     value={message}
                     onChange={(e) => {
                       setMessage(e.target.value);
                     }}
                   />
-                  <p className="errorMessage">{errors.message?.message}</p>
+                  <div className="invalid-feedback">
+                    Please provide a valid Message.
+                  </div>
                 </div>
                 <button
                   type="submit"
                   name="submit"
                   className="btn  btn-primary mt-3"
+                  onClick={(event) => {
+                    checkFormFields(event);
+                  }}
                 >
                   Contact Me
                 </button>
@@ -191,22 +227,10 @@ function Contact() {
           </div>
         </section>
       </div>
-{/* Loading SVG */}
 
-
-
-
-{loading ? <div id="loading-svg"></div>:<p ></p>}
       {/* Success Box */}
 
       {emailStatus ? <SuccessBox /> : <p></p>}
-
-
-
-   
-     
-
-     
     </>
   );
 }

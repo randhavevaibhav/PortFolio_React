@@ -11,9 +11,13 @@
     /* border: 2px solid red; */
     background-size: cover;
     z-index: 999;
-   
   
-    
+  }
+
+.AppL>*:not(#loading-svg)
+  {
+    filter: blur(3px);
+    pointer-events: none;
   }
 
   
