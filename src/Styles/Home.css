@@ -245,10 +245,14 @@ top:730px; */
     left: -0.6rem;
   }
   #cred{
-  top: -26px;
-  left: -1px;
+    top: 5px;
+    left: -10px;
   position: relative;
   font-weight: bold;
+  }
+  #cred-p
+  {
+    font-size: 8px;
   }
 
   #cred:active #cred-p{
@@ -257,7 +261,7 @@ top:730px; */
   
   }
   #brand{
-    margin-right: 174px;
+    margin-right: 170px;
   }
 }
 

@@ -6,6 +6,7 @@ import { useRef, useState,useContext } from "react";
 import { GlobalContext } from "../Contex/GlobalContext";
 import emailjs from "@emailjs/browser";
 import SuccessBox from "./SuccessBox";
+
 import "../Styles/LodingSVG.css"
 
 function Contact() {
@@ -32,6 +33,7 @@ function Contact() {
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
+    mode:"onChange",
   });
   const submitForm = (e) => {
     setLoading(true);

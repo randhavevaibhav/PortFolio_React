@@ -9,6 +9,7 @@ function SuccessBox() {
     document
       .getElementById("dismiss-popup-btn")
       .addEventListener("click", function () {
+        window.location.reload();
         document.getElementsByClassName("popup")[0].classList.remove("active");
         setTimeout(() => {
           setEmailStatus(false);
