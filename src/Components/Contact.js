@@ -36,6 +36,7 @@ function Contact() {
     mode:"onChange",
   });
   const submitForm = (e) => {
+    disableScreen();
     setLoading(true);
     emailjs
       .sendForm(
@@ -49,8 +50,10 @@ function Contact() {
           setLoading(false);
           setEmailStatus(true);
           
-          contactMeButton.setAttribute('disabled', '');
+          // contactMeButton.setAttribute('disabled', '');
+          
           clearForm();
+         
         },
         (error) => {
           setEmailStatus(false);
@@ -59,6 +62,13 @@ function Contact() {
       );
       
   };
+
+  function disableScreen() {
+   
+    var div= document.createElement("div");
+    div.className += "overlay";
+    document.body.appendChild(div);
+}
 
   const clearForm = () => {
     if (
