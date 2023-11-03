@@ -161,16 +161,7 @@
   padding-bottom: 0;
 }
 
-.lottie-image-01
-{
 
-  /* width: "50%", position: "absolute", left: "-10", top: 730 */
-/* 
-width:80%; */
-/* position: absolute;
-left: -10px;
-top:730px; */
-}
 
 /* typing animation for desktop */
 @media (min-width: 800px) {

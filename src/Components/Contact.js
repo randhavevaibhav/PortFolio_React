@@ -6,7 +6,7 @@ import { useRef, useState,useContext } from "react";
 import { GlobalContext } from "../Contex/GlobalContext";
 import emailjs from "@emailjs/browser";
 import SuccessBox from "./SuccessBox";
-
+import $ from "jquery";
 import "../Styles/LodingSVG.css"
 
 function Contact() {
@@ -17,7 +17,7 @@ function Contact() {
   const [message, setMessage] = useState("");
   const { emailStatus, setEmailStatus } = useContext(GlobalContext);
   const [loading,setLoading] =  useState(false);
-
+  const contactMeButton = document.getElementById('submit-button');
   const schema = yup.object().shape({
     name: yup.string().required("Please enter your name."),
     email: yup
@@ -49,6 +49,7 @@ function Contact() {
           setLoading(false);
           setEmailStatus(true);
           
+          contactMeButton.setAttribute('disabled', '');
           clearForm();
         },
         (error) => {
@@ -185,6 +186,7 @@ function Contact() {
                 <button
                   type="submit"
                   name="submit"
+                  id="submit-button"
                   className="btn  btn-primary mt-3"
                 >
                   Contact Me
