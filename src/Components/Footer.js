@@ -26,7 +26,9 @@ function Footer() {
       <i className="fab fa-github "></i>
       </a>
     </div>
+   
   </footer>
+
         </div>
     );
 }

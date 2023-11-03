@@ -7,6 +7,7 @@ import Services from "../Components/Services";
 import Portfolio from "../Components/Portfolio";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
+import Cred from "../Components/Cred";
 
 function Home(props) {
   function setCollapseAttributes(identifier) {
@@ -23,10 +24,14 @@ function Home(props) {
   return (
     <div>
       {/* navbar */}
-
+      
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top navbarScroll">
+     
+         
+      
         <div className="container">
-          <a className="navbar-brand " href="#">
+            <Cred/>
+          <a className="navbar-brand " id="brand" href="#">
             VAIBHAV
           </a>
           <button

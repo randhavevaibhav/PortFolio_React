@@ -7,6 +7,33 @@
   padding-bottom: 4rem;
 }
 
+#cred{
+  width: 30px;
+  padding: 0px;
+  margin: 0px;
+  height: 0px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  left:-121px;
+ 
+}
+#cred-p{
+  color:white;
+  font-size: 9px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+ #cred:hover #cred-p{
+  visibility: visible;
+  opacity: 1;
+
+}
+
+
+
 /* hero background image */
 .bgimage {
   height: 100vh;
@@ -216,6 +243,21 @@ top:730px; */
     position: relative;
 
     left: -0.6rem;
+  }
+  #cred{
+  top: -26px;
+  left: -1px;
+  position: relative;
+  font-weight: bold;
+  }
+
+  #cred:active #cred-p{
+    visibility: visible;
+    opacity: 1;
+  
+  }
+  #brand{
+    margin-right: 200px;
   }
 }
 
