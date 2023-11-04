@@ -172,6 +172,14 @@
   opacity: .5; /* in FireFox */ 
   filter: alpha(opacity=50); /* in IE */
 }
+#experience
+{
+  padding-top: 60px;
+  margin-top: 36px;
+}
+/* #timelineElement{
+  margin-bottom: 19rem;
+} */
 
 /* typing animation for desktop */
 @media (min-width: 800px) {

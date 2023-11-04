@@ -10,10 +10,14 @@ import '../Styles/Experience.css';
 
 function Experience() {
   return (
-    <div className="experience">
+    <>
+   <section id="experience">
+   <div className="experience">
+       <h1 className="text-center" >Experience</h1>
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
+          id="timelineElement"
           date="2014 - 2015"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
@@ -24,6 +28,7 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
+          id="timelineElement"
           date="2015 - 2017"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
@@ -34,6 +39,7 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
+          id="timelineElement"
           date="2017 - 2021"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
@@ -44,6 +50,7 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
+          id="timelineElement"
           date="Nov 2021 - Present"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<Work />}
@@ -58,6 +65,10 @@ function Experience() {
 
       </VerticalTimeline>
     </div>
+   </section>
+     
+    </>
+   
   );
 }
 

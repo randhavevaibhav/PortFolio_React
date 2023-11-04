@@ -8,6 +8,7 @@ import Portfolio from "../Components/Portfolio";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
 import Cred from "../Components/Cred";
+import Experience from "./Experience";
 
 function Home(props) {
   function setCollapseAttributes(identifier) {
@@ -74,6 +75,7 @@ function Home(props) {
       </section>
       {/* about section */}
       <About />
+      <Experience/>
       {/* services section*/}
 
       <Services />
