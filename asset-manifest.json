@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PortFolio_React/static/css/main.e71cfee0.css",
-    "main.js": "/PortFolio_React/static/js/main.c75d9130.js",
+    "main.css": "/PortFolio_React/static/css/main.6ca16681.css",
+    "main.js": "/PortFolio_React/static/js/main.d733e430.js",
     "static/js/512.c7dbe40a.chunk.js": "/PortFolio_React/static/js/512.c7dbe40a.chunk.js",
     "static/media/bg_image.webp": "/PortFolio_React/static/media/bg_image.727234f0bde7c49b07ef.webp",
     "index.html": "/PortFolio_React/index.html",
     "static/media/Eclipse-1s-200px.svg": "/PortFolio_React/static/media/Eclipse-1s-200px.b21f3e5d8830b7330ab4.svg",
-    "main.e71cfee0.css.map": "/PortFolio_React/static/css/main.e71cfee0.css.map",
-    "main.c75d9130.js.map": "/PortFolio_React/static/js/main.c75d9130.js.map",
+    "main.6ca16681.css.map": "/PortFolio_React/static/css/main.6ca16681.css.map",
+    "main.d733e430.js.map": "/PortFolio_React/static/js/main.d733e430.js.map",
     "512.c7dbe40a.chunk.js.map": "/PortFolio_React/static/js/512.c7dbe40a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e71cfee0.css",
-    "static/js/main.c75d9130.js"
+    "static/css/main.6ca16681.css",
+    "static/js/main.d733e430.js"
   ]
 }
