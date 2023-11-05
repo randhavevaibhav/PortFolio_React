@@ -7,7 +7,7 @@ function Portfolio() {
     <div>
       <section className="section" id="portfolio">
         <div className="container mt-3">
-          <h1 className="text-center">Portfolio</h1>
+          <h1 className="text-center">Projects</h1>
 
           {rowIndexList.map((rowNum) => {
             return (

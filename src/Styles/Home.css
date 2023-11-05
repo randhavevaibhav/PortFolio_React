@@ -15,7 +15,8 @@
   cursor: pointer;
   display: flex;
   position: relative;
-  left:-121px;
+  left: 93px;
+  top: -13px;
  
 }
 #cred-p{
@@ -206,7 +207,109 @@ color: white;
 
   margin-bottom: 11rem;
 }
+/*CSS for navbar  */
+.nav {
+  width: 100%;
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+  height: 58px;
+  position: fixed;
+  z-index: 33;
+}
+.nav > .nav-header {
+  flex: 0.95;
+  padding-left: 1rem;
+  z-index: 13;
+}
+.nav > .nav-header > .nav-title {
+  font-size: 22px;
+  color: #fff;
+}
+.nav > .nav-list >ul {
+  display: flex;
+  gap: 2rem;
+}
+.nav > .nav-list ul> li {
+  list-style-type: none;
+}
+.nav > .nav-list ul> li a {
+  text-decoration: none;
+  color: #efefef;
+  cursor: pointer;
+}
+.nav > #nav-check {
+    display: none;
+}
 
+#menu-list{
+
+  transition: height 1s ease 0s;
+ 
+}
+@media (max-width: 480px) {
+  .nav {
+    padding: 1rem;
+  }
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 0.2rem;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    background-color: #212529;
+    height: 0;
+    transition: all 0.3s ease-in;
+    top: 40px;
+    left: 0;
+    overflow: hidden;
+  }
+  .nav > .nav-list > li {
+    width: 100%;
+    /* margin-top: 15px; */
+  }
+  .nav-list {
+    
+    z-index: 11;
+  } 
+
+  #menu-list
+  {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  .nav > .nav-list > ul {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+ 
+}
+
+
+
+/*  */
 /* typing animation for desktop */
 @media (min-width: 800px) {
   .typeanimation {
@@ -280,8 +383,8 @@ color: white;
     left: -0.6rem;
   }
   #cred{
-    top: 5px;
-    left: -10px;
+    top: -18px;
+    left: 87px;
   position: relative;
   font-weight: bold;
   }
@@ -298,10 +401,12 @@ color: white;
   #brand{
     margin-right: 170px;
   }
-  /* #portfolio{
+  .servicesText.card
+ {
 
-    padding-top: 4rem;
-  } */
+height: fit-content;
+
+ }
 
 
 }

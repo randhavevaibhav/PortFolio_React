@@ -7,56 +7,20 @@ import Services from "../Components/Services";
 import Portfolio from "../Components/Portfolio";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
-import Cred from "../Components/Cred";
 import Experience from "./Experience";
+import { useState} from "react";
 
 function Home(props) {
-  function setCollapseAttributes(identifier) {
-    const element = document.getElementById(identifier);
+  
+ 
 
-    const toggleAtrribute = element.getAttribute("class");
 
-    if (toggleAtrribute.includes("show")) {
-      element.removeAttribute("class");
 
-      element.setAttribute("class", "navbar-collapse collapse");
-    }
-  }
+  
   return (
     <div>
-      {/* navbar */}
-      
-      <nav className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top navbarScroll">
      
-         
-      
-        <div className="container">
-            <Cred/>
-          <a className="navbar-brand " id="brand" href="#">
-            VAIBHAV
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon " />
-          </button>
-          <div
-            className="collapse navbar-collapse"
-            id="navbarSupportedContent"
-            onClick={(event) => {
-              setCollapseAttributes("navbarSupportedContent");
-            }}
-          >
-            <Navbar />
-          </div>
-        </div>
-      </nav>
+       <Navbar />
       {/* main banner */}
       <div className="bgimage" id="home"></div>
 
@@ -75,7 +39,7 @@ function Home(props) {
       </section>
       {/* about section */}
       <About />
-      <Experience/>
+      <Experience />
       {/* services section*/}
 
       <Services />
