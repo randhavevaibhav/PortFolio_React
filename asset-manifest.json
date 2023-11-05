@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/PortFolio_React/static/css/main.6ca16681.css",
-    "main.js": "/PortFolio_React/static/js/main.d733e430.js",
-    "static/js/512.c7dbe40a.chunk.js": "/PortFolio_React/static/js/512.c7dbe40a.chunk.js",
+    "main.css": "/PortFolio_React/static/css/main.c11f43b0.css",
+    "main.js": "/PortFolio_React/static/js/main.12b1ad5f.js",
+    "static/js/787.1ed0c42c.chunk.js": "/PortFolio_React/static/js/787.1ed0c42c.chunk.js",
+    "static/media/NewAPI.png": "/PortFolio_React/static/media/NewAPI.9217091c07914de438ba.png",
     "static/media/bg_image.webp": "/PortFolio_React/static/media/bg_image.727234f0bde7c49b07ef.webp",
+    "static/media/FlappyBird.png": "/PortFolio_React/static/media/FlappyBird.74d70a6dfa7f4b77e045.png",
+    "static/media/BookMarkApp.png": "/PortFolio_React/static/media/BookMarkApp.4025cf9ecb228e8b01db.png",
     "index.html": "/PortFolio_React/index.html",
     "static/media/Eclipse-1s-200px.svg": "/PortFolio_React/static/media/Eclipse-1s-200px.b21f3e5d8830b7330ab4.svg",
-    "main.6ca16681.css.map": "/PortFolio_React/static/css/main.6ca16681.css.map",
-    "main.d733e430.js.map": "/PortFolio_React/static/js/main.d733e430.js.map",
-    "512.c7dbe40a.chunk.js.map": "/PortFolio_React/static/js/512.c7dbe40a.chunk.js.map"
+    "main.c11f43b0.css.map": "/PortFolio_React/static/css/main.c11f43b0.css.map",
+    "main.12b1ad5f.js.map": "/PortFolio_React/static/js/main.12b1ad5f.js.map",
+    "787.1ed0c42c.chunk.js.map": "/PortFolio_React/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ca16681.css",
-    "static/js/main.d733e430.js"
+    "static/css/main.c11f43b0.css",
+    "static/js/main.12b1ad5f.js"
   ]
 }
