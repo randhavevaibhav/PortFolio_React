@@ -92,7 +92,7 @@ function Contact() {
     <>
    
 
-    <div>
+    <>
         <section className="container mt-3 section" id="contact">
           <h1 className="text-center">Contact Me</h1>
           <div className="row mt-4">
@@ -205,7 +205,7 @@ function Contact() {
             </div>
           </div>
         </section>
-      </div>
+      </>
 {/* Loading SVG */}
 
 

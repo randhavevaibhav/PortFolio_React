@@ -1,6 +1,7 @@
 
 
 import "../Styles/Navbar.css";
+
 function Navbar() {
  
   return (

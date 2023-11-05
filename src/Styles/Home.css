@@ -109,15 +109,20 @@
 .fa-instagram:hover,
 .fa-twitter:hover,
 .fa-linkedin:hover,
-.fa-twitch:hover {
+.fa-twitch:hover,
+.fa-briefcase:hover {
   color: #fff;
 }
 .fab {
   color: white;
 }
 
-.fa-linkedin {
+.fab {
   margin-right: 40px;
+}
+.fa-briefcase
+{
+color: white;
 }
 
 .servicesText.card {
@@ -180,6 +185,27 @@
 /* #timelineElement{
   margin-bottom: 19rem;
 } */
+
+.PortfolioImages{
+  width: 100%;
+  height: 350px;
+}
+.card
+{
+  height: 35rem;
+}
+.card-body
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#services{
+
+  margin-bottom: 11rem;
+}
 
 /* typing animation for desktop */
 @media (min-width: 800px) {
@@ -272,6 +298,12 @@
   #brand{
     margin-right: 170px;
   }
+  /* #portfolio{
+
+    padding-top: 4rem;
+  } */
+
+
 }
 
 #embedmap-canvas img {

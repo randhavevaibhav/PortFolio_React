@@ -25,8 +25,11 @@ function Footer() {
       <a href="https://github.com/randhavevaibhav" target="_blank">
       <i className="fab fa-github "></i>
       </a>
+
+      
+      
     </div>
-   
+    
   </footer>
 
         </div>

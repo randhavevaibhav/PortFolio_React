@@ -22,7 +22,7 @@ function Experience() {
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title"> School Name School Address</h3>
+          <h3 className="vertical-timeline-element-title">S.S.M.V</h3>
           <p>10th</p>
         </VerticalTimelineElement>
 
@@ -33,7 +33,7 @@ function Experience() {
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title"> School Name School Address</h3>
+          <h3 className="vertical-timeline-element-title">S.S.V.M</h3>
           <p>12th</p>
         </VerticalTimelineElement>
 
@@ -44,19 +44,19 @@ function Experience() {
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title"> School Name School Address</h3>
+          <h3 className="vertical-timeline-element-title">Dr.D.Y.Patil School of Engineering</h3>
           <p>B.E.</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           id="timelineElement"
-          date="Nov 2021 - Present"
+          date="Nov 2021 - 2023"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<Work />}
         >
           <h3 className="vertical-timeline-element-title">Actimize Developer</h3>
-          <p>TCS</p>
+          <p>total years of experience: 2 years at <b>TCS</b> in web development</p>
         </VerticalTimelineElement>
 
 
