@@ -1,6 +1,7 @@
 import BookMarkAppImage from "../assets/BookMarkApp.png"
 import FlappyBirdImage from "../assets/FlappyBird.png"
-import NewsAPIImage from "../assets/NewAPI.png"
+import NewsAPIImage from "../assets/NewAPI.png";
+import JsManualSnap from "../assets/JsManualVideoSnap.png";
 export const PortFolioList =[
     {
        imgSrc:BookMarkAppImage,
@@ -23,6 +24,13 @@ export const PortFolioList =[
         projectLink:"https://randhavevaibhav.github.io/NewsAPI/"
      },
      //second row
+
+     {
+      imgSrc:JsManualSnap,
+      title:"Js Manual",
+      para:`Created a website using React Js which can be used to create, store and display JavaScript concepts in the form of cards. `,
+      projectLink:"https://randhavevaibhav.github.io/JsManual2/"
+   },
 
    
     
